@@ -1,4 +1,4 @@
 .env
 /TelegramScraper/log
-/dbt/logs
-/dbt/target
+/TelegramScraper/dbt/logs
+/TelegramScraper/dbt/target
