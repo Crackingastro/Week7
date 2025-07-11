@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_telegram_messages
+    description: "Cleaned Telegram messages from all channels"
+    columns:
+      - name: message_id
+        tests:
+          - unique
+          - not_null
+      - name: message_text
+        tests:
+          - not_null
+
+  - name: fct_messages
+    description: "Fact table for message analytics"
+    tests:
+      - dbt_utils.relationships:
+          from: channel_key
+          to: ref('dim_channels')
+          field: channel_key
