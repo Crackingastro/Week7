@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: telegram_messages_chemed123
+      - name: telegram_messages_lobelia4cosmetics
+      - name: telegram_messages_tikvahpharma
