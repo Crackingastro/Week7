@@ -19,3 +19,27 @@ models:
           from: channel_key
           to: ref('dim_channels')
           field: channel_key
+
+  - name: fct_image_detections
+    description: "Fact table linking each message to its detected image objects"
+    columns:
+      - name: message_id
+        description: "Foreign key to fct_messages"
+        tests:
+          - not_null
+          - dbt_utils.relationships:
+              to: ref('fct_messages')
+              field: message_id
+
+      - name: detected_object_class
+        description: "Name of the object class detected by YOLOv8"
+        tests:
+          - not_null
+
+      - name: confidence_score
+        description: "Detection confidence score (0–1)"
+        tests:
+          - not_null
+          - between:
+              min: 0
+              max: 1
