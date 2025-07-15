@@ -1,0 +1,53 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+    environment:
+      DB_NAME:     ${DB_NAME}
+      DB_USER:     ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_HOST:     postgres
+      DB_PORT:     ${DB_PORT}
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+
+  dagster:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: dagster dev -f pipeline.py
+    environment:
+      DAGSTER_HOME: /dagster_home
+      DB_NAME:       ${DB_NAME}
+      DB_USER:       ${DB_USER}
+      DB_PASSWORD:   ${DB_PASSWORD}
+      DB_HOST:       postgres
+      DB_PORT:       ${DB_PORT}
+    volumes:
+      - ./:/app
+      - dagster_home:/dagster_home
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+
+volumes:
+  pgdata:
+  dagster_home:
