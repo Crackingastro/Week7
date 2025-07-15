@@ -1,0 +1,41 @@
+2025-07-11 13:57:45,561 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2025-07-11 13:57:47,959 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2025-07-11 13:57:48,892 - INFO - Phone migrated to 4
+2025-07-11 13:57:49,068 - INFO - Reconnecting to new data center 4
+2025-07-11 13:57:49,244 - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2025-07-11 13:57:49,244 - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-07-11 13:57:49,245 - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2025-07-11 13:57:51,350 - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2025-07-11 13:58:03,314 - INFO - Starting scrape for channel: CheMed123
+2025-07-11 13:58:04,336 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:05,969 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:08,090 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:09,216 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:10,492 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:11,810 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:16,206 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:17,603 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:20,099 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:21,567 - INFO - Successfully scraped 10 messages from CheMed123
+2025-07-11 13:58:21,567 - INFO - Starting scrape for channel: lobelia4cosmetics
+2025-07-11 13:58:22,290 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:23,479 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:30,148 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:32,938 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:34,395 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:35,353 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:35,836 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:36,867 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:40,031 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:43,387 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:44,293 - INFO - Successfully scraped 10 messages from lobelia4cosmetics
+2025-07-11 13:58:44,293 - INFO - Starting scrape for channel: tikvahpharma
+2025-07-11 13:58:44,867 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:46,888 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:48,467 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:50,153 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:51,648 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:52,049 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-07-11 13:58:53,852 - INFO - Successfully scraped 10 messages from tikvahpharma
+2025-07-11 13:58:53,853 - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2025-07-11 13:58:53,854 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
