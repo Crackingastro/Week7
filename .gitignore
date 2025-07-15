@@ -3,3 +3,6 @@
 /dbt/target
 /dbt/logs
 /api/__pycache__
+/__pycache__
+.tmp_dagster_home_29zpgy9i
+.tmp_dagster_home_3yob3dmr
