@@ -2,3 +2,4 @@
 /log
 /dbt/target
 /dbt/logs
+/api/__pycache__
